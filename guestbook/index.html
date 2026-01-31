@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Safe Guestbook</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; padding-top: 50px; background: #f4f4f4; }
+        .container { background: white; padding: 25px; border-radius: 10px; shadow: 0 4px 8px rgba(0,0,0,0.1); width: 350px; }
+        input, textarea { width: 100%; margin-bottom: 15px; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px; }
+        button { width: 100%; padding: 12px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:disabled { background: #ccc; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Guestbook</h2>
+        <form id="guestForm">
+            <input type="text" id="userName" placeholder="Enter Your Name">
+            <textarea id="userMessage" placeholder="Enter Your Message"></textarea>
+            
+            <button type="button" id="submitBtn" onclick="submitFeedback(event)">Send Message</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
